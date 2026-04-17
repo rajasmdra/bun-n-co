@@ -1,11 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu Kategori | Bun & Co Bakery</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Menu</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand font-logo fs-2" href="#">Bun & Co.</a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header border-bottom border-secondary">
+                    <h5 class="offcanvas-title font-logo fs-2">Bun & Co.</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                
+                <div class="offcanvas-body align-items-center">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                        <li class="nav-item"><a class="nav-link active-nav" href="menu.html" style="color: var(--accent-color) !important;">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="review.html">Ulasan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="order.html">Pesan Sekarang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="fw-bold mb-3">Menu Spesial Kami</h1>
+            <p class="lead mb-4">Jelajahi kelezatan artisan yang dipanggang segar setiap pagi dengan bahan premium.</p>
+            <a href="#menu" class="btn btn-custom rounded-pill btn-lg px-5 shadow">Lihat Menu</a>
+        </div>
+    </header>
+
+    <main class="container mb-5" id="menu">
+        
+        <ul class="nav nav-pills justify-content-center mb-5 flex-wrap gap-2" id="menuKategori" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pastry-tab" data-bs-toggle="pill" data-bs-target="#pastry" type="button" role="tab">Pastry & Viennoiserie</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="artisan-tab" data-bs-toggle="pill" data-bs-target="#artisan" type="button" role="tab">Artisan Bread</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="manis-tab" data-bs-toggle="pill" data-bs-target="#manis" type="button" role="tab">Roti Manis & Kue</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="menuKategoriContent">
+            
+            <div class="tab-pane fade show active" id="pastry" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <span class="badge-custom">Bestseller <i class="bi bi-star-fill text-warning ms-1"></i></span>
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Classic Croissant">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title h5 fw-bold">Classic Butter Croissant</h3>
+                                <p class="card-text text-muted mb-4">Croissant renyah di luar, berongga dan lembut di dalam. Dipanggang dengan mentega Prancis asli.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5 text-dark">Rp 25.000</span>
+                                    <a href="#" class="btn btn-custom btn-sm rounded-pill"><i class="bi bi-bag-plus me-1"></i> Pesan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Pain au Chocolat">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title h5 fw-bold">Pain au Chocolat</h3>
+                                <p class="card-text text-muted mb-4">Pastry berlapis renyah dengan isian batang dark chocolate premium yang lumer sempurna di mulut.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5 text-dark">Rp 28.000</span>
+                                    <a href="#" class="btn btn-custom btn-sm rounded-pill"><i class="bi bi-bag-plus me-1"></i> Pesan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <span class="badge-custom badge-new">Baru!</span>
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1555507036-ab1f40ce88cb?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Almond Croissant">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title h5 fw-bold">Almond Croissant</h3>
+                                <p class="card-text text-muted mb-4">Croissant ganda-panggang dengan krim frangipane manis dan taburan irisan almond panggang.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5 text-dark">Rp 32.000</span>
+                                    <a href="#" class="btn btn-custom btn-sm rounded-pill"><i class="bi bi-bag-plus me-1"></i> Pesan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="artisan" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1585478259715-876acc5be8eb?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Artisan Sourdough">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title h5 fw-bold">Classic Sourdough</h3>
+                                <p class="card-text text-muted mb-4">Roti asam klasik dengan tekstur kenyal dan kulit yang renyah. Fermentasi alami selama 24 jam.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5 text-dark">Rp 45.000</span>
+                                    <a href="#" class="btn btn-custom btn-sm rounded-pill"><i class="bi bi-bag-plus me-1"></i> Pesan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1597079910443-60c43fc4f729?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="French Baguette">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title h5 fw-bold">French Baguette</h3>
+                                <p class="card-text text-muted mb-4">Baguette tradisional ala Prancis, sangat cocok untuk sandwich atau dinikmati bersama semangkuk sup.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5 text-dark">Rp 20.000</span>
+                                    <a href="#" class="btn btn-custom btn-sm rounded-pill"><i class="bi bi-bag-plus me-1"></i> Pesan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Ciabatta Bread">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title h5 fw-bold">Rustic Ciabatta</h3>
+                                <p class="card-text text-muted mb-4">Roti khas Italia berongga besar dengan sentuhan aroma extra virgin olive oil. Sempurna untuk panini.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5 text-dark">Rp 25.000</span>
+                                    <a href="#" class="btn btn-custom btn-sm rounded-pill"><i class="bi bi-bag-plus me-1"></i> Pesan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="manis" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <span class="badge-custom">Bestseller <i class="bi bi-star-fill text-warning ms-1"></i></span>
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Cinnamon Roll">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title h5 fw-bold">Cinnamon Roll</h3>
+                                <p class="card-text text-muted mb-4">Roti gulung kayu manis super lembut dengan lumeran cream cheese frosting yang melimpah.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5 text-dark">Rp 30.000</span>
+                                    <a href="#" class="btn btn-custom btn-sm rounded-pill"><i class="bi bi-bag-plus me-1"></i> Pesan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1601000938259-9e92002320b2?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Choco Babka">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title h5 fw-bold">Choco Twist Babka</h3>
+                                <p class="card-text text-muted mb-4">Roti kepang manis khas Eropa Timur dengan lapisan cokelat tebal yang menggoda di setiap gigitan.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5 text-dark">Rp 35.000</span>
+                                    <a href="#" class="btn btn-custom btn-sm rounded-pill"><i class="bi bi-bag-plus me-1"></i> Pesan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1621236378699-8597faf6a176?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Strawberry Danish">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="card-title h5 fw-bold">Strawberry Danish</h3>
+                                <p class="card-text text-muted mb-4">Danish pastry renyah dipadukan dengan vanilla custard lezat dan irisan buah stroberi segar.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="fw-bold fs-5 text-dark">Rp 28.000</span>
+                                    <a href="#" class="btn btn-custom btn-sm rounded-pill"><i class="bi bi-bag-plus me-1"></i> Pesan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="pt-5 pb-3 mt-5">
+        <div class="container text-center">
+            <h2 class="font-logo mb-4" style="color: var(--accent-color);">Bun & Co.</h2>
+            <div class="social-icons mb-4">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-whatsapp"></i>
+            </div>
+            <p class="mb-0 text-white-50">&copy; 2026 Bun & Co Bakery. Dibuat dengan penuh cinta dan ragi alami.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
