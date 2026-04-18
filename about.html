@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Kategori | Bun & Co Bakery</title>
+    <title>Tentang Kami | Bun & Co Bakery</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow" style="background-color: var(--primary-color, #5c3a21);">
         <div class="container">
             <a class="navbar-brand font-logo fs-2" href="#">Bun & Co.</a>
             
@@ -20,33 +22,133 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" style="background-color: var(--primary-color, #5c3a21);">
                 <div class="offcanvas-header border-bottom border-secondary">
-                    <h5 class="offcanvas-title font-logo fs-2">Bun & Co.</h5>
+                    <h5 class="offcanvas-title text-white font-logo fs-2">Bun & Co.</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
                 </div>
                 
                 <div class="offcanvas-body align-items-center">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                        <li class="nav-item"><a class="nav-link active-nav" href="about.html" style="color: var(--accent-color) !important;">Tentang Kami</a></li>
-                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="review.html">Ulasan</a></li>
-                        <li class="nav-item"><a class="nav-link" href="order.html">Pesan Sekarang</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link active-nav fw-bold" href="about.html" style="color: var(--accent-color, #d4a373) !important;">Tentang Kami</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="review.html">Ulasan</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="order.html">Pesan Sekarang</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Kontak</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 
-    <footer class="pt-5 pb-3 mt-5">
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="text-white mb-2" style="font-family: 'Playfair Display', serif;">Tentang Kami</h1>
+            <p class="mb-0 text-white-50">Kisah di balik setiap potong roti yang kami sajikan.</p>
+        </div>
+    </header>
+
+    <main class="container my-5 pt-3">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-4" style="font-family: 'Playfair Display', serif; color: var(--primary-color, #5c3a21);">Berawal dari Kecintaan pada Roti</h2>
+                <p class="text-muted" style="line-height: 1.8;">Bun & Co adalah bakery yang menyediakan roti dan pastry dengan kualitas yang selalu terjaga. Kami percaya bahwa kebahagiaan sejati dimulai dari aroma roti yang baru keluar dari panggangan di pagi hari.</p>
+                <p class="text-muted" style="line-height: 1.8;">Produk kami dibuat dengan teliti oleh tangan-tangan ahli menggunakan bahan pilihan terbaik. Kami berkomitmen untuk menyajikan hidangan yang fresh setiap hari tanpa bahan pengawet, demi menjaga rasa otentik yang aman dinikmati oleh seluruh anggota keluarga Anda.</p>
+            </div>
+            <div class="col-lg-5 col-md-8 mx-auto"> 
+                <div class="ratio ratio-1x1"> 
+                    <img src="https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?q=80&w=800&auto=format&fit=crop" 
+                    class="img-fluid rounded-4 shadow-sm object-fit-cover hover-elegant" 
+                    alt="Bakery Story">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="container mb-5 pb-4">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="bg-white p-5 rounded-4 shadow-sm h-100 border-0 hover-elegant">
+                    <div class="p-3 d-inline-block rounded-circle mb-3" style="background-color: rgba(212, 163, 115, 0.2); color: var(--accent-color, #d4a373);">
+                        <i class="bi bi-egg fs-1"></i>
+                    </div>
+                    <h5 class="fw-bold" style="color: var(--primary-color, #5c3a21);">Bahan Segar</h5>
+                    <p class="small text-muted mb-0">Hanya menggunakan bahan premium terbaik untuk rasa yang maksimal dan kualitas terjaga.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="bg-white p-5 rounded-4 shadow-sm h-100 border-0 hover-elegant">
+                    <div class="p-3 d-inline-block rounded-circle mb-3" style="background-color: rgba(212, 163, 115, 0.2); color: var(--accent-color, #d4a373);">
+                        <i class="bi bi-hand-index-thumb fs-1"></i>
+                    </div>
+                    <h5 class="fw-bold" style="color: var(--primary-color, #5c3a21);">Buatan Tangan</h5>
+                    <p class="small text-muted mb-0">Setiap adonan diolah secara manual dengan cinta dan teknik artisan yang tepat.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="bg-white p-5 rounded-4 shadow-sm h-100 border-0 hover-elegant">
+                    <div class="p-3 d-inline-block rounded-circle mb-3" style="background-color: rgba(212, 163, 115, 0.2); color: var(--accent-color, #d4a373);">
+                        <i class="bi bi-award fs-1"></i>
+                    </div>
+                    <h5 class="fw-bold" style="color: var(--primary-color, #5c3a21);">Kualitas Rasa</h5>
+                    <p class="small text-muted mb-0">Komitmen kami adalah mempertahankan standar rasa sempurna yang sama setiap harinya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5 pb-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold" style="font-family: 'Playfair Display', serif; color: var(--primary-color, #5c3a21);">Orang di Balik Layar</h2>
+            <p class="text-muted">Kenali tangan-tangan ahli yang membuat setiap gigitan terasa sempurna.</p>
+        </div>
+        
+        <div class="row g-4 text-center justify-content-center">
+            <div class="col-md-4 col-sm-6">
+                <div class="bg-white rounded-4 shadow-sm p-4 border-0 h-100 hover-elegant">
+                    <img src="chef_image/raja.jpeg" class="rounded-circle mb-3 object-fit-cover shadow-sm" width="120" height="120" alt="Head Baker">
+                    <h5 class="fw-bold mb-1" style="color: var(--primary-color, #5c3a21);">Raja Samudra Tandepadang</h5>
+                    <p class="small fw-semibold mb-2" style="color: var(--accent-color, #d4a373);">Head Baker</p>
+                    <p class="small text-muted mb-0">Ahli ragi alami dengan pengalaman lebih dari 10 tahun di dunia artisan bread.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="bg-white rounded-4 shadow-sm p-4 border-0 h-100 hover-elegant">
+                    <img src="chef_image/putra.jpeg" class="rounded-circle mb-3 object-fit-cover shadow-sm" width="120" height="120" alt="Pastry Chef">
+                    <h5 class="fw-bold mb-1" style="color: var(--primary-color, #5c3a21);">Tryana Bagus Saputra</h5>
+                    <p class="small fw-semibold mb-2" style="color: var(--accent-color, #d4a373);">Pastry Chef</p>
+                    <p class="small text-muted mb-0">Spesialis di bidang viennoiserie yang menciptakan croissant paling flaky di kota ini.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="bg-white rounded-4 shadow-sm p-4 border-0 h-100 hover-elegant">
+                    <img src="chef_image/clar.jpeg" class="rounded-circle mb-3 object-fit-cover shadow-sm" width="120" height="120" alt="Store Manager">
+                    <h5 class="fw-bold mb-1" style="color: var(--primary-color, #5c3a21);">Clarisa Tita Agnevia</h5>
+                    <p class="small fw-semibold mb-2" style="color: var(--accent-color, #d4a373);">Store Manager</p>
+                    <p class="small text-muted mb-0">Memastikan setiap pelanggan mendapatkan pelayanan hangat dan kopi terbaik.</p>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <footer class="footer-custom pt-5 pb-3 mt-5">
         <div class="container text-center">
-            <h2 class="font-logo mb-4" style="color: var(--accent-color);">Bun & Co.</h2>
+            <h2 class="font-logo mb-4" style="color: var(--accent-color, #d4a373);">Bun & Co.</h2>
             <div class="social-icons mb-4">
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-whatsapp"></i>
+                <a href="https://instagram.com" target="_blank" class="text-white text-decoration-none mx-2">
+                    <i class="bi bi-instagram fs-4"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="text-white text-decoration-none mx-2">
+                    <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://wa.me/6289616809304" target="_blank" class="text-white text-decoration-none mx-2">
+                    <i class="bi bi-whatsapp fs-4"></i>
+                </a>
             </div>
             <p class="mb-0 text-white-50">&copy; 2026 Bun & Co Bakery. Dibuat dengan penuh cinta dan ragi alami.</p>
         </div>

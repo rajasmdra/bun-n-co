@@ -193,3 +193,49 @@ footer {
     background-color: var(--primary-color);
     color: var(--bg-light);
 }
+
+/* Custom Form Styles */
+.form-control, .form-select {
+    border: 1px solid var(--border-color, #eaddd0);
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent-color, #d4a373);
+    box-shadow: 0 0 0 0.25rem rgba(212, 163, 115, 0.25);
+}
+.form-label {
+    color: var(--primary-color, #5c3a21);
+}
+
+/* Custom WhatsApp Button */
+.btn-wa {
+    background-color: #25D366; 
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-wa:hover, .btn-wa:focus {
+    background-color: #128C7E;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Footer Custom Border */
+.footer-custom {
+    background-color: var(--primary-color, #5c3a21);
+    color: var(--bg-light, #fdfbf7);
+    border-top: 5px solid var(--accent-color, #d4a373);
+}
+
+/* Efek Hover Elegan untuk Card */
+.hover-elegant {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-elegant:hover {
+    transform: translateY(-10px);
+    /* Menggunakan bayangan yang lebih lembut dan elegan */
+    box-shadow: 0 15px 35px rgba(92, 58, 33, 0.1) !important; 
+}

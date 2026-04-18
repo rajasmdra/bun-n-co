@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Kategori | Bun & Co Bakery</title>
+    <title>Kontak | Bun & Co Bakery</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow" style="background-color: var(--primary-color, #5c3a21);">
         <div class="container">
             <a class="navbar-brand font-logo fs-2" href="#">Bun & Co.</a>
             
@@ -20,38 +22,163 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" style="background-color: var(--primary-color, #5c3a21);">
                 <div class="offcanvas-header border-bottom border-secondary">
-                    <h5 class="offcanvas-title font-logo fs-2">Bun & Co.</h5>
+                    <h5 class="offcanvas-title text-white font-logo fs-2">Bun & Co.</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
                 </div>
                 
                 <div class="offcanvas-body align-items-center">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
-                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="review.html">Ulasan</a></li>
-                        <li class="nav-item"><a class="nav-link" href="order.html">Pesan Sekarang</a></li>
-                        <li class="nav-item"><a class="nav-link active-nav" href="contact.html" style="color: var(--accent-color) !important;">Kontak</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="about.html">Tentang Kami</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="review.html">Ulasan</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="order.html">Pesan Sekarang</a></li>
+                        <li class="nav-item"><a class="nav-link active-nav fw-bold" href="contact.html" style="color: var(--accent-color, #d4a373) !important;">Kontak</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 
-    <footer class="pt-5 pb-3 mt-5">
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="text-white mb-2" style="font-family: 'Playfair Display', serif;">Hubungi Kami</h1>
+            <p class="mb-0 text-white-50">Punya pertanyaan, saran, atau sekadar ingin menyapa? Kami siap mendengar!</p>
+        </div>
+    </header>
+
+    <main class="container mb-5 mt-4">
+        <div class="row g-5">
+            
+            <div class="col-lg-7">
+                <div class="bg-white rounded-4 shadow-sm p-4 p-md-5 border-0 h-100">
+                    <h3 class="h4 mb-4 border-bottom pb-2" style="font-family: 'Playfair Display', serif; color: var(--primary-color, #5c3a21);">
+                        <i class="bi bi-chat-dots me-2 text-muted"></i>Kirim Pesan
+                    </h3>
+                    
+                    <form id="formKontakWA">
+                        <div class="mb-3">
+                            <label for="namaKontak" class="form-label fw-medium">Nama Anda</label>
+                            <input type="text" class="form-control" id="namaKontak" required placeholder="Contoh: Budi Santoso">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailKontak" class="form-label fw-medium">Alamat Email</label>
+                            <input type="email" class="form-control" id="emailKontak" required placeholder="nama@email.com">
+                        </div>
+                        <div class="mb-4">
+                            <label for="pesanKontak" class="form-label fw-medium">Pesan</label>
+                            <textarea class="form-control" id="pesanKontak" rows="5" required placeholder="Tuliskan pertanyaan atau pesan Anda di sini..."></textarea>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-wa w-100 py-3 fs-5 rounded-pill fw-bold">
+                                <i class="bi bi-whatsapp me-2"></i>Kirim Pesan via WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="row g-4 h-100">
+                    
+                    <div class="col-12">
+                        <div class="bg-white rounded-4 shadow-sm p-4 border-0">
+                            <h4 class="mb-4" style="font-family: 'Playfair Display', serif; color: var(--primary-color, #5c3a21);">Informasi Toko</h4>
+                            
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="p-2 rounded-circle me-3 text-white" style="background-color: var(--accent-color, #d4a373);">
+                                    <i class="bi bi-geo-alt-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Alamat</h6>
+                                    <p class="text-muted small mb-0">Jl. Gununganyar Harapan ZC-1<br>Surabaya, Jawa Timur 60281</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <div class="p-2 rounded-circle me-3 text-white" style="background-color: var(--accent-color, #d4a373);">
+                                    <i class="bi bi-telephone-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Telepon / WhatsApp</h6>
+                                    <p class="text-muted small mb-0">+62 896-1680-9304<br>Buka Setiap Hari: 08.00 - 20.00 WIB</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start">
+                                <div class="p-2 rounded-circle me-3 text-white" style="background-color: var(--accent-color, #d4a373);">
+                                    <i class="bi bi-envelope-fill fs-5"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Email</h6>
+                                    <p class="text-muted small mb-0">hello@bunandco.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="bg-white rounded-4 shadow-sm p-2 border-0 h-100">
+                            <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1426.3785180135228!2d112.7776614465676!3d-7.338083376630666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7facf1de325f9%3A0xcc9a336e9d28165d!2sG%20Anyar%20Lor%20Tengah%20II%2C%20Gn.%20Anyar%2C%20Kec.%20Gn.%20Anyar%2C%20Surabaya%2C%20Jawa%20Timur!5e0!3m2!1sen!2sid!4v1776492861103!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="footer-custom pt-5 pb-3 mt-5">
         <div class="container text-center">
-            <h2 class="font-logo mb-4" style="color: var(--accent-color);">Bun & Co.</h2>
+            <h2 class="font-logo mb-4" style="color: var(--accent-color, #d4a373);">Bun & Co.</h2>
             <div class="social-icons mb-4">
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-whatsapp"></i>
+                <a href="https://instagram.com" target="_blank" class="text-white text-decoration-none mx-2">
+                    <i class="bi bi-instagram fs-4"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="text-white text-decoration-none mx-2">
+                    <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://wa.me/6289616809304" target="_blank" class="text-white text-decoration-none mx-2">
+                    <i class="bi bi-whatsapp fs-4"></i>
+                </a>
             </div>
             <p class="mb-0 text-white-50">&copy; 2026 Bun & Co Bakery. Dibuat dengan penuh cinta dan ragi alami.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('formKontakWA').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Nomor WA Tujuan
+            const nomorWhatsApp = "6289616809304"; 
+
+            // Ambil data dari form
+            const nama = document.getElementById('namaKontak').value;
+            const email = document.getElementById('emailKontak').value;
+            const pesan = document.getElementById('pesanKontak').value;
+
+            // Rangkai Pesan
+            let teksPesan = `Halo Bun & Co., saya mengunjungi website dan ingin bertanya/menyampaikan pesan:\n\n`;
+            teksPesan += `*👤 Nama:* ${nama}\n`;
+            teksPesan += `*📧 Email:* ${email}\n\n`;
+            teksPesan += `*💬 Pesan:*\n${pesan}\n\n`;
+            teksPesan += `Terima kasih!`;
+
+            // Encode & Buka WA
+            const pesanEncode = encodeURIComponent(teksPesan);
+            const linkWA = `https://wa.me/${nomorWhatsApp}?text=${pesanEncode}`;
+            
+            window.open(linkWA, '_blank');
+        });
+    </script>
 </body>
 </html>
