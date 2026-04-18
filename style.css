@@ -9,7 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-light);
-    padding-top: 64px; 
+    padding-top: 60px; 
     color: var(--text-dark);
 }
 
@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5 {
 .offcanvas {
     background-color: var(--primary-color);
     color: var(--bg-light);
+    max-width: 70%;
 }
 .offcanvas .nav-link {
     color: var(--bg-light) !important;
@@ -131,7 +132,6 @@ h1, h2, h3, h4, h5 {
     object-fit: cover;
     transition: transform 0.8s ease; /* Zoom lebih lambat dan halus */
 }
-
 
 /* Badges */
 .badge-custom {
@@ -236,6 +236,5 @@ footer {
 
 .hover-elegant:hover {
     transform: translateY(-10px);
-    /* Menggunakan bayangan yang lebih lembut dan elegan */
     box-shadow: 0 15px 35px rgba(92, 58, 33, 0.1) !important; 
 }
