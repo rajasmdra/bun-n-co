@@ -72,10 +72,9 @@ h1, h2, h3, h4, h5 {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(92, 58, 33, 0.7), rgba(92, 58, 33, 0.6)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop') center/cover no-repeat;
+    background: linear-gradient(rgba(92, 58, 33, 0.7), rgba(92, 58, 33, 0.6)), url('menu_image/hero-image.avif') center/cover no-repeat;
     padding: 120px 0;
     color: white;
-    margin-bottom: 60px;
 }
 .hero-section h1 {
     color: white;
@@ -226,7 +225,6 @@ footer {
 .footer-custom {
     background-color: var(--primary-color, #5c3a21);
     color: var(--bg-light, #fdfbf7);
-    border-top: 5px solid var(--accent-color, #d4a373);
 }
 
 /* Efek Hover Elegan untuk Card */
@@ -237,4 +235,42 @@ footer {
 .hover-elegant:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(92, 58, 33, 0.1) !important; 
+}
+
+/* Animasi Masuk (Fade in up) - Tetap dipertahankan karena sudah halus */
+.fade-in-up {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(20px); /* Jarak disesuaikan agar lebih halus */
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-hero {
+    background-color: transparent; /* Latar belakang transparan */
+    color: white; /* Teks berwarna putih */
+    border: 2px solid white; /* Garis tepi putih agar tombol terlihat */
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: all 0.3s ease; /* Transisi halus */
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-hero:hover {
+    background-color: var(--accent-color, #d4a373); /* Terisi warna coklat muda */
+    color: white; /* Teks tetap putih */
+    border-color: var(--accent-color, #d4a373); /* Garis tepi ikut berubah warna */
+    transform: translateY(-3px); /* Efek sedikit terangkat */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Bayangan lembut di bawahnya */
 }
