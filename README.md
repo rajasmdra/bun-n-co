@@ -6,7 +6,7 @@ A responsive and visually appealing web profile for **Bun & Co**, a local bakery
 
 * **Home** – An inviting Hero section that highlights our best-selling pastries and directs users to learn more about us.
 * **About Us** – Discover the story behind Bun N Co, our baking philosophy, and meet the passionate bakers behind the scenes.
-* **Menu** – Browse our freshly baked goods, neatly organized into categories (e.g., Breads, Pastries, Cakes, Beverages) for easy navigation.
+* **Menu** – Browse our freshly baked goods, neatly organized into categories for easy navigation.
 * **Reviews** – A section where customers can read feedback from others and submit their own honest reviews about our treats.
 * **Order Now** – A user-friendly order form where customers can select their desired items. Upon submission, the order details are automatically formatted and redirected to our WhatsApp for quick processing.
 * **Contact** – Contains our location, opening hours, and contact details, along with an inquiry form that directly sends messages or questions to our WhatsApp.
