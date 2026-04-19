@@ -1,6 +1,6 @@
-# Bun N Co - Bakery Web Profile
+# Bun & Co - Bakery Web Profile
 
-A responsive and visually appealing web profile for **Bun N Co**, a local bakery dedicated to serving fresh and delicious baked goods. Built with **HTML, CSS, and Bootstrap**, this website provides a seamless experience for customers to explore our menu, learn about our story, and place orders directly via WhatsApp.
+A responsive and visually appealing web profile for **Bun & Co**, a local bakery dedicated to serving fresh and delicious baked goods. Built with **HTML, CSS, and Bootstrap**, this website provides a seamless experience for customers to explore our menu, learn about our story, and place orders directly via WhatsApp.
 
 ## Features & Pages
 
